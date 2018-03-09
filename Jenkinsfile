@@ -12,5 +12,10 @@ pipeline {
         sh 'echo "Hello !! Its Build Stage"'
       }
     }
+    stage('Test') {
+      steps {
+        sh 'sh \'./jenkins/scripts/test.sh\''
+      }
+    }
   }
 }
