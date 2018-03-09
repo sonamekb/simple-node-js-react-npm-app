@@ -9,8 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''sh \'sudo su\'
-sh \'npm install\''''
+        sh 'echo "Hello !! Its Build Stage"'
       }
     }
   }
