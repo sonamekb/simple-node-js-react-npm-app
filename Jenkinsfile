@@ -9,7 +9,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''sudo su -
+        sh '''#!/bin/bash
+sudo su -
 npm install'''
       }
     }
